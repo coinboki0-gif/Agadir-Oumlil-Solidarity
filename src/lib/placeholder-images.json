@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-mountains",
+      "description": "Scenic view of High Atlas mountains near Taroudant",
+      "imageUrl": "https://picsum.photos/seed/ngo-hero/1920/1080",
+      "imageHint": "mountains village"
+    },
+    {
+      "id": "project-irrigation",
+      "description": "Concrete irrigation channel in a rural agricultural area",
+      "imageUrl": "https://picsum.photos/seed/irrigation/1200/800",
+      "imageHint": "irrigation farming"
+    },
+    {
+      "id": "ramadan-food",
+      "description": "Food aid boxes for humanitarian relief",
+      "imageUrl": "https://picsum.photos/seed/ramadan/1200/800",
+      "imageHint": "charity food"
+    },
+    {
+      "id": "beneficiary-story",
+      "description": "Dignified portrait showing resilience and hope",
+      "imageUrl": "https://picsum.photos/seed/story/800/1000",
+      "imageHint": "dignified person"
+    }
+  ]
 }
