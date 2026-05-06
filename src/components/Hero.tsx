@@ -5,74 +5,106 @@ import { useLanguage } from './LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Counter } from './Counter';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { ChevronDown, ArrowRight } from 'lucide-react';
 
 export const Hero = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const heroImage = PlaceHolderImages.find(img => img.id === 'hero-mountains');
 
+  const stats = [
+    { value: 635000, suffix: " DH", prefix: "", label: t("ميزانية 2025", "Budget 2025", "2025 Budget") },
+    { value: 600, suffix: "", prefix: "+", label: t("مستفيد رمضان", "Bénéficiaires Ramadan", "Ramadan Beneficiaries") },
+    { value: 10, suffix: "", prefix: "+", label: t("سنوات الخبرة", "Années d'expérience", "Years of Experience") },
+    { value: 5, suffix: "", prefix: "", label: t("مجالات التدخل", "Domaines d'action", "Action Domains") },
+  ];
+
+  const heading = {
+    ar: <><span className="text-secondary">نبني مستقبلاً أفضل</span><br className="hidden md:block" /> للمجتمعات الهشة</>,
+    fr: <><span className="text-secondary">Bâtir</span> un avenir meilleur<br className="hidden md:block" /> pour les communautés vulnérables</>,
+    en: <>Building a <span className="text-secondary">Better Future</span><br className="hidden md:block" /> for Vulnerable Communities</>,
+  };
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-      {/* Background with Overlay */}
+    <section className="relative min-h-screen flex flex-col overflow-hidden">
+
+      {/* Background Image */}
       <div
-        className="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-[10000ms] hover:scale-110"
+        className="absolute inset-0 z-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${heroImage?.imageUrl})` }}
-        data-ai-hint="mountains village"
       />
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-primary/80 via-primary/60 to-background" />
 
-      {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 text-center text-white">
-        <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-secondary/20 border border-secondary/30 backdrop-blur-sm animate-in fade-in slide-in-from-bottom duration-700">
-          <span className="text-secondary font-semibold text-sm tracking-widest uppercase">
-            {t("دوار أنروز، إقليم تارودانت", "Douar Anrouz, Province de Taroudant")}
-          </span>
-        </div>
+      {/* Cinematic overlay */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/55 via-primary/50 to-primary" />
+      <div className="absolute inset-0 z-0 bg-gradient-to-r from-primary/25 via-transparent to-transparent" />
 
-        <h1 className="text-4xl md:text-7xl font-bold mb-6 leading-[1.2] max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom duration-1000 delay-200">
-          {t("نبني مستقبلاً أفضل للمجتمعات الهشة", "Bâtir un avenir meilleur pour les communautés vulnérables")}
-        </h1>
+      {/* Decorative dot patterns */}
+      <div className="absolute top-28 right-16 w-44 h-44 opacity-[0.06] z-0 hidden lg:block"
+        style={{backgroundImage: 'radial-gradient(circle, rgba(255,255,255,1) 1.5px, transparent 1.5px)', backgroundSize: '14px 14px'}} />
+      <div className="absolute bottom-48 left-12 w-32 h-32 opacity-[0.06] z-0 hidden lg:block"
+        style={{backgroundImage: 'radial-gradient(circle, rgba(255,255,255,1) 1.5px, transparent 1.5px)', backgroundSize: '14px 14px'}} />
 
-        <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom duration-1000 delay-300">
-          {t("جمعية أكادير أوملال للتنمية والتضامن — عمل إنساني، تنمية مستدامة، وتضامن دائم.", "Association Agadir Oumlil pour le Développement et la Solidarité — Action humanitaire et développement durable.")}
-        </p>
+      {/* Main content */}
+      <div className="relative z-10 flex-1 flex items-center justify-center pt-24 pb-10">
+        <div className="max-w-5xl mx-auto px-6 text-center text-white">
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-in fade-in slide-in-from-bottom duration-1000 delay-500">
-          <Button className="bg-secondary hover:bg-secondary/90 text-white text-lg font-bold px-10 py-7 rounded-xl shadow-xl w-full sm:w-auto">
-            {t("تبرع الآن", "Donner Maintenant")}
-          </Button>
-          <Button variant="outline" className="bg-white/10 border-white/20 hover:bg-white/20 text-white text-lg font-bold px-10 py-7 rounded-xl backdrop-blur-md w-full sm:w-auto">
-            {t("اكتشف مشاريعنا", "Découvrir nos projets")}
-          </Button>
-        </div>
-
-        {/* Counter Row */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pt-10 border-t border-white/10 animate-in fade-in duration-1000 delay-700">
-          <div className="flex flex-col gap-1">
-            <span className="text-3xl md:text-4xl font-bold text-secondary">
-              <Counter end={635000} suffix=" DH" />
+          {/* Location badge */}
+          <div className="inline-flex items-center gap-2.5 px-5 py-2 mb-10 rounded-full bg-white/10 border border-white/15 backdrop-blur-sm animate-in fade-in slide-in-from-bottom duration-700">
+            <div className="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse" />
+            <span className="text-white/80 font-medium text-xs tracking-[0.18em] uppercase">
+              {t("دوار أنروز، إقليم تارودانت", "Douar Anrouz, Province de Taroudant", "Douar Anrouz, Taroudant Province")}
             </span>
-            <span className="text-white/60 text-sm">{t("ميزانية 2025", "Budget 2025")}</span>
           </div>
-          <div className="flex flex-col gap-1">
-            <span className="text-3xl md:text-4xl font-bold text-secondary">
-              <Counter end={600} prefix="+" />
-            </span>
-            <span className="text-white/60 text-sm">{t("مستفيد رمضان", "Bénéficiaires Ramadan")}</span>
+
+          {/* Heading */}
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-7 leading-[1.08] tracking-tight animate-in fade-in slide-in-from-bottom duration-1000 delay-150">
+            {heading[language as keyof typeof heading] ?? heading.fr}
+          </h1>
+
+          {/* Subheading */}
+          <p className="text-lg md:text-xl text-white/65 mb-12 max-w-2xl mx-auto leading-relaxed animate-in fade-in slide-in-from-bottom duration-1000 delay-300">
+            {t(
+              "جمعية أكادير أوملال للتنمية والتضامن — عمل إنساني، تنمية مستدامة، وتضامن دائم.",
+              "Association Agadir Oumlil pour le Développement et la Solidarité — Action humanitaire et développement durable.",
+              "Agadir Oumlil Association for Development and Solidarity — Humanitarian action, sustainable development, and lasting solidarity."
+            )}
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-in fade-in slide-in-from-bottom duration-1000 delay-500">
+            <Button className="bg-secondary hover:bg-secondary/90 text-white text-base font-bold px-9 py-6 rounded-xl shadow-2xl w-full sm:w-auto gap-2 group transition-all">
+              {t("تبرع الآن", "Donner Maintenant", "Donate Now")}
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
+            <Button variant="outline" className="bg-white/10 border-white/20 hover:bg-white/20 text-white text-base font-bold px-9 py-6 rounded-xl backdrop-blur-md w-full sm:w-auto transition-all">
+              {t("اكتشف مشاريعنا", "Découvrir nos projets", "Discover Our Projects")}
+            </Button>
           </div>
-          <div className="flex flex-col gap-1">
-            <span className="text-3xl md:text-4xl font-bold text-secondary">
-              <Counter end={10} prefix="+" />
-            </span>
-            <span className="text-white/60 text-sm">{t("سنوات الخبرة", "Années d'expérience")}</span>
+
+          {/* Stats glass bar */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 rounded-2xl overflow-hidden border border-white/10 backdrop-blur-md animate-in fade-in duration-1000 delay-700">
+            {stats.map((stat, i) => (
+              <div key={i} className="flex flex-col items-center gap-1.5 py-7 px-4 bg-white/5 hover:bg-white/10 transition-colors duration-300">
+                <span className="text-2xl md:text-3xl font-bold text-secondary">
+                  <Counter end={stat.value} prefix={stat.prefix} suffix={stat.suffix} />
+                </span>
+                <span className="text-white/45 text-xs font-medium tracking-wide text-center">{stat.label}</span>
+              </div>
+            ))}
           </div>
-          <div className="flex flex-col gap-1">
-            <span className="text-3xl md:text-4xl font-bold text-secondary">
-              <Counter end={5} />
-            </span>
-            <span className="text-white/60 text-sm">{t("مجالات التدخل", "Domaines d'action")}</span>
-          </div>
+
         </div>
       </div>
+
+      {/* Scroll indicator */}
+      <div className="relative z-10 flex justify-center pb-8 animate-in fade-in duration-1000 delay-1000">
+        <div className="flex flex-col items-center gap-1.5 text-white/30 hover:text-white/60 transition-colors cursor-pointer group">
+          <span className="text-[10px] tracking-[0.25em] uppercase font-medium">
+            {t("اكتشف", "Découvrir", "Explore")}
+          </span>
+          <ChevronDown className="w-5 h-5 animate-bounce" />
+        </div>
+      </div>
+
     </section>
   );
 };
