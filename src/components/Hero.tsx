@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Counter } from './Counter';
 
 import { ChevronDown, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 export const Hero = () => {
   const { t, language } = useLanguage();
@@ -73,13 +74,17 @@ export const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-in fade-in slide-in-from-bottom duration-1000 delay-500">
-            <Button className="bg-secondary hover:bg-secondary/90 text-white text-base font-bold px-9 py-6 rounded-xl shadow-2xl w-full sm:w-auto gap-2 group transition-all">
-              {t("تبرع الآن", "Donner Maintenant", "Donate Now")}
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="outline" className="bg-white/10 border-white/20 hover:bg-white/20 text-white text-base font-bold px-9 py-6 rounded-xl backdrop-blur-md w-full sm:w-auto transition-all">
-              {t("اكتشف مشاريعنا", "Découvrir nos projets", "Discover Our Projects")}
-            </Button>
+            <Link href="/contact">
+              <Button className="bg-secondary hover:bg-secondary/90 text-white text-base font-bold px-9 py-6 rounded-xl shadow-2xl w-full sm:w-auto gap-2 group transition-all">
+                {t("تبرع الآن", "Donner Maintenant", "Donate Now")}
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+            <Link href="/projects">
+              <Button variant="outline" className="bg-white/10 border-white/20 hover:bg-white/20 text-white text-base font-bold px-9 py-6 rounded-xl backdrop-blur-md w-full sm:w-auto transition-all">
+                {t("اكتشف مشاريعنا", "Découvrir nos projets", "Discover Our Projects")}
+              </Button>
+            </Link>
           </div>
 
           {/* Stats glass bar */}
