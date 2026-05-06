@@ -12,10 +12,12 @@ import { Testimonial } from '@/components/Testimonial';
 import { Donation } from '@/components/Donation';
 import { Footer } from '@/components/Footer';
 import { Toaster } from '@/components/ui/toaster';
+import { SplashScreen } from '@/components/SplashScreen';
 
 export default function Home() {
   return (
     <LanguageProvider>
+      <SplashScreen />
       <main className="min-h-screen">
         <Navbar />
         <Hero />
