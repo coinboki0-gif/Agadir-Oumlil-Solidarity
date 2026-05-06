@@ -1,12 +1,12 @@
 [
   {
     "id": "irrigation",
-    "titleAr": "ÃÂÃÂ´ÃÂ±ÃÂÃÂ¹ ÃÂ§ÃÂÃÂ³ÃÂÃÂ ÃÂ§ÃÂÃÂÃÂ¨ÃÂÃÂ±",
+    "titleAr": "مشروع السقي الكبير",
     "titleFr": "Grand Projet d'Irrigation",
     "titleEn": "Grand Irrigation Project",
-    "descAr": "ÃÂ¨ÃÂÃÂ§ÃÂ¡ ÃÂÃÂÃÂ§ÃÂ© ÃÂ³ÃÂÃÂ ÃÂ®ÃÂ±ÃÂ³ÃÂ§ÃÂÃÂÃÂ© ÃÂ¨ÃÂ·ÃÂÃÂ 600 ÃÂÃÂªÃÂ± ÃÂÃÂ¹ ÃÂ®ÃÂ²ÃÂ§ÃÂ ÃÂÃÂ§ÃÂ¦ÃÂ ÃÂ¶ÃÂ®ÃÂ",
-    "descFr": "Construction d'un canal d'irrigation bÃÂ©tonnÃÂ© de 600m avec rÃÂ©servoir",
-    "descEn": "Construction of a 600m concrete irrigation canal with a large water reservoir",
+    "descAr": "بناء قناة سقي خرسانية بطول 600 متر",
+    "descFr": "Construction d'un canal d'irrigation bétonné de 600m",
+    "descEn": "Construction of a 600m concrete irrigation canal",
     "budget": "275,946 MAD",
     "year": "2024",
     "status": "completed",
@@ -15,11 +15,11 @@
   },
   {
     "id": "medical",
-    "titleAr": "ÃÂ§ÃÂÃÂ¯ÃÂ¹ÃÂ ÃÂ§ÃÂÃÂ·ÃÂ¨ÃÂ",
-    "titleFr": "Soutien MÃÂ©dical",
+    "titleAr": "الدعم الطبي",
+    "titleFr": "Soutien Médical",
     "titleEn": "Medical Support",
-    "descAr": "ÃÂªÃÂÃÂÃÂÃÂ ÃÂ§ÃÂÃÂ¹ÃÂÃÂÃÂÃÂ§ÃÂª ÃÂ§ÃÂÃÂ¬ÃÂ±ÃÂ§ÃÂ­ÃÂÃÂ© ÃÂÃÂ´ÃÂ±ÃÂ§ÃÂ¡ ÃÂ§ÃÂÃÂ£ÃÂ¯ÃÂÃÂÃÂ© ÃÂÃÂÃÂÃÂ±ÃÂ¶ÃÂ",
-    "descFr": "Financement d'opÃÂ©rations chirurgicales et achat de mÃÂ©dicaments",
+    "descAr": "تمويل العمليات الجراحية وشراء الأدوية",
+    "descFr": "Financement d'opérations chirurgicales",
     "descEn": "Funding surgical operations and purchasing medications",
     "budget": "83,000 MAD",
     "year": "2025",
@@ -29,10 +29,10 @@
   },
   {
     "id": "education",
-    "titleAr": "ÃÂ¯ÃÂ¹ÃÂ ÃÂ§ÃÂÃÂªÃÂ¹ÃÂÃÂÃÂ",
-    "titleFr": "Soutien ÃÂ  l'ÃÂducation",
+    "titleAr": "دعم التعليم",
+    "titleFr": "Soutien à l'Éducation",
     "titleEn": "Education Support",
-    "descAr": "ÃÂªÃÂÃÂÃÂÃÂ± ÃÂ§ÃÂÃÂÃÂ­ÃÂ§ÃÂÃÂ¸ ÃÂÃÂ§ÃÂÃÂÃÂÃÂ§ÃÂ²ÃÂ ÃÂ§ÃÂÃÂÃÂ¯ÃÂ±ÃÂ³ÃÂÃÂ© ÃÂÃÂÃÂªÃÂÃÂ§ÃÂÃÂÃÂ°",
+    "descAr": "توفير المحافظ واللوازم المدرسية",
     "descFr": "Fourniture de cartables et fournitures scolaires",
     "descEn": "Providing school bags and supplies",
     "budget": "30,000 MAD",
@@ -43,12 +43,12 @@
   },
   {
     "id": "ramadan",
-    "titleAr": "ÃÂÃÂ§ÃÂÃÂÃÂ© ÃÂ§ÃÂÃÂªÃÂ¶ÃÂ§ÃÂÃÂ ÃÂ§ÃÂÃÂ±ÃÂÃÂ¶ÃÂ§ÃÂÃÂÃÂ©",
+    "titleAr": "قافلة التضامن الرمضانية",
     "titleFr": "Caravane Solidaire Ramadan",
     "titleEn": "Ramadan Solidarity Caravan",
-    "descAr": "ÃÂªÃÂÃÂ²ÃÂÃÂ¹ ÃÂ³ÃÂÃÂ§ÃÂ ÃÂºÃÂ°ÃÂ§ÃÂ¦ÃÂÃÂ© ÃÂÃÂªÃÂÃÂ§ÃÂÃÂÃÂ© ÃÂÃÂÃÂ£ÃÂ³ÃÂ± ÃÂ§ÃÂÃÂÃÂªÃÂ¶ÃÂ±ÃÂ±ÃÂ©",
+    "descAr": "توزيع سلال غذائية متكاملة",
     "descFr": "Distribution de paniers alimentaires complets",
-    "descEn": "Distributing complete food baskets to disadvantaged families",
+    "descEn": "Distributing complete food baskets",
     "budget": "360,000 MAD",
     "year": "2026",
     "status": "active",
@@ -57,12 +57,12 @@
   },
   {
     "id": "housing",
-    "titleAr": "ÃÂ¯ÃÂ¹ÃÂ ÃÂ§ÃÂÃÂ³ÃÂÃÂ",
+    "titleAr": "دعم السكن",
     "titleFr": "Aide au Logement",
     "titleEn": "Housing Aid",
-    "descAr": "ÃÂªÃÂ±ÃÂÃÂÃÂ ÃÂÃÂªÃÂ£ÃÂÃÂÃÂ ÃÂ§ÃÂÃÂÃÂÃÂ§ÃÂ²ÃÂ ÃÂ§ÃÂÃÂÃÂªÃÂÃÂ§ÃÂÃÂÃÂ© ÃÂÃÂÃÂ¨ÃÂ§ÃÂ± ÃÂ§ÃÂÃÂ³ÃÂ",
-    "descFr": "RÃÂ©habilitation des maisons dÃÂ©gradÃÂ©es",
-    "descEn": "Rehabilitating deteriorated homes for elderly",
+    "descAr": "ترميم وتأهيل المنازل المتهالكة",
+    "descFr": "Réhabilitation des maisons dégradées",
+    "descEn": "Rehabilitating deteriorated homes",
     "budget": "45,000 MAD",
     "year": "2025",
     "status": "completed",
@@ -71,11 +71,11 @@
   },
   {
     "id": "mosque",
-    "titleAr": "ÃÂ¯ÃÂ¹ÃÂ ÃÂ§ÃÂÃÂÃÂ³ÃÂ§ÃÂ¬ÃÂ¯",
-    "titleFr": "Soutien aux MosquÃÂ©es",
+    "titleAr": "دعم المساجد",
+    "titleFr": "Soutien aux Mosquées",
     "titleEn": "Mosque Support",
-    "descAr": "ÃÂ§ÃÂÃÂÃÂ³ÃÂ§ÃÂÃÂÃÂ© ÃÂÃÂ ÃÂªÃÂ¬ÃÂÃÂÃÂ² ÃÂÃÂªÃÂ±ÃÂÃÂÃÂ ÃÂ§ÃÂÃÂÃÂ³ÃÂ§ÃÂ¬ÃÂ¯ ÃÂ§ÃÂÃÂÃÂ­ÃÂÃÂÃÂ©",
-    "descFr": "Contribution ÃÂ  l'ÃÂ©quipement et rÃÂ©novation des mosquÃÂ©es",
+    "descAr": "المساهمة في تجهيز وترميم المساجد",
+    "descFr": "Contribution à l'équipement et rénovation des mosquées",
     "descEn": "Contributing to equipping and renovating local mosques",
     "budget": "22,000 MAD",
     "year": "2025",
@@ -84,31 +84,31 @@
     "mainImage": "https://i.ibb.co/84jKW28J/A-cinematic-wide-angle-aerial-photograph-202605060200-1-1.webp"
   },
   {
-    "id": "gfhfhfhfh",
-    "titleAr": "gfhfg",
-    "titleFr": "fghhh",
-    "titleEn": "",
-    "descAr": "fhg",
-    "descFr": "fghhhhh",
-    "descEn": "fghhhhhhh",
-    "budget": "fhgfhgfhgfhgfhgfhgfhgfgh",
+    "id": "uyti",
+    "titleAr": "yiyiy",
+    "titleFr": "yutiyu",
+    "titleEn": "iyui",
+    "descAr": "yiyi",
+    "descFr": "uiy",
+    "descEn": "yuiyui",
+    "budget": "yiu",
     "year": "2026",
     "category": "Health",
-    "mainImage": "fhg",
+    "mainImage": "yuiiyu",
     "status": "active"
   },
   {
-    "id": "uhoiuhu",
-    "titleAr": "",
-    "titleFr": "àijàij",
-    "titleEn": "",
-    "descAr": "",
-    "descFr": "",
-    "descEn": "",
-    "budget": "",
+    "id": "dfvgg",
+    "titleAr": "dgdfgdf",
+    "titleFr": "dfgdfg",
+    "titleEn": "gdfg",
+    "descAr": "fdgdfg",
+    "descFr": "dfgd",
+    "descEn": "fdfg",
+    "budget": "dfgg",
     "year": "2026",
     "category": "Education",
-    "mainImage": "",
+    "mainImage": "dfgdfgdf",
     "status": "active"
   }
 ]
