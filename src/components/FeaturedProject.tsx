@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 import React, { useState } from 'react';
 import { useLanguage } from './LanguageContext';
 import { Button } from '@/components/ui/button';
@@ -159,9 +160,7 @@ export const FeaturedProject = () => {
                 <p className="text-white/60 text-sm mb-1">{t("الميزانية الإجمالية", "Budget Total", "Total Budget")}</p>
                 <p className="text-3xl font-bold text-secondary">275,946.72 MAD</p>
               </div>
-              <Button className="bg-secondary hover:bg-secondary/90 text-white px-8 py-6 rounded-xl font-bold text-lg w-full sm:w-auto">
-                {t("اقرأ التفاصيل", "Voir les détails", "View Details")}
-              </Button>
+              <Link href="/projects"><Button className="bg-secondary hover:bg-secondary/90 text-white px-8 py-6 rounded-xl font-bold text-lg w-full sm:w-auto">{t("اقرأ التفاصيل", "Voir les détails", "View Details")}</Button></Link>
             </div>
           </div>
 
