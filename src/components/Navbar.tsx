@@ -21,7 +21,7 @@ export const Navbar = () => {
 
   const navLinks = [
     { nameAr: "الرئيسية", nameFr: "Accueil", href: "#" },
-    { nameAr: "من نحن", nameFr: "À propos", href: "#mission" },
+    { nameAr: "من نحن", nameFr: "À propos", href: "/about" },
     { nameAr: "مجالاتنا", nameFr: "Domaines", href: "#programs" },
     { nameAr: "مشاريعنا", nameFr: "Projets", href: "/projects" },
     { nameAr: "تواصل معنا", nameFr: "Contact", href: "#contact" },
