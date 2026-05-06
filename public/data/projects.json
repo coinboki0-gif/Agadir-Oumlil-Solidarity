@@ -110,19 +110,5 @@
     "category": "Education",
     "mainImage": "dfgdfgdf",
     "status": "active"
-  },
-  {
-    "id": "eeeeeeee",
-    "titleAr": "eeeeeeeeeeeeeeeeee",
-    "titleFr": "eeeeee",
-    "titleEn": "eeeeeeeeeeeeeeee",
-    "descAr": "eeeeeeeeeeeeeeeeeeeee",
-    "descFr": "eeeeeeeeeeeeeee",
-    "descEn": "eeeeeeeeeeeeeeeeeee",
-    "budget": "eeeeeeeeeeeee",
-    "year": "2026",
-    "category": "Education",
-    "mainImage": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-    "status": "active"
   }
 ]
