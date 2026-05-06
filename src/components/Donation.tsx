@@ -47,7 +47,7 @@ export const Donation = () => {
                   </h3>
                   <p className="text-2xl font-bold">AL BARID BANK</p>
                 </div>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Logo_Al_Barid_Bank.png" alt="Barid Bank" className="h-12 object-contain brightness-0 invert opacity-50" />
+                <img src="/images/Al_Barik_Bank_logo.png" alt="Al Barid Bank" className="h-12 object-contain" />
               </div>
 
               <div className="space-y-6">
