@@ -96,5 +96,19 @@
     "category": "Health",
     "mainImage": "fhg",
     "status": "active"
+  },
+  {
+    "id": "uhoiuhu",
+    "titleAr": "",
+    "titleFr": "àijàij",
+    "titleEn": "",
+    "descAr": "",
+    "descFr": "",
+    "descEn": "",
+    "budget": "",
+    "year": "2026",
+    "category": "Education",
+    "mainImage": "",
+    "status": "active"
   }
 ]
