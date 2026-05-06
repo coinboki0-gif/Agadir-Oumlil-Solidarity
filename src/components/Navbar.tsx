@@ -5,6 +5,7 @@ import { useLanguage } from './LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Globe } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 export const Navbar = () => {
@@ -22,7 +23,7 @@ export const Navbar = () => {
     { nameAr: "الرئيسية", nameFr: "Accueil", href: "#" },
     { nameAr: "من نحن", nameFr: "À propos", href: "#mission" },
     { nameAr: "مجالاتنا", nameFr: "Domaines", href: "#programs" },
-    { nameAr: "مشاريعنا", nameFr: "Projets", href: "#projects" },
+    { nameAr: "مشاريعنا", nameFr: "Projets", href: "/projects" },
     { nameAr: "تواصل معنا", nameFr: "Contact", href: "#contact" },
   ];
 
@@ -33,7 +34,7 @@ export const Navbar = () => {
     )}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center">
+        <Link href="/" className="flex items-center">
           <Image
             src="/images/logo-navbar.png"
             alt="Association Agadir Oumlil"
@@ -45,12 +46,12 @@ export const Navbar = () => {
             )}
             priority
           />
-        </div>
+        </Link>
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.nameAr}
               href={link.href}
               className={cn(
@@ -59,7 +60,7 @@ export const Navbar = () => {
               )}
             >
               {t(link.nameAr, link.nameFr)}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -95,14 +96,14 @@ export const Navbar = () => {
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b shadow-2xl p-6 flex flex-col gap-6 animate-in slide-in-from-top duration-300">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.nameAr}
               href={link.href}
               className="text-lg font-semibold text-primary"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t(link.nameAr, link.nameFr)}
-            </a>
+            </Link>
           ))}
           <div className="flex flex-col gap-4 border-t pt-4">
             <Button variant="outline" onClick={toggleLanguage} className="w-full">

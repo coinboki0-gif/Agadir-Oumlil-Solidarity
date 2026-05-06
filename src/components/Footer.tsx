@@ -52,7 +52,7 @@ export const Footer = () => {
             <ul className="space-y-4 text-muted-foreground">
               <li><a href="#mission" className="hover:text-secondary transition-colors">{t("من نحن", "À propos")}</a></li>
               <li><a href="#programs" className="hover:text-secondary transition-colors">{t("مجالات التدخل", "Domaines d'action")}</a></li>
-              <li><a href="#projects" className="hover:text-secondary transition-colors">{t("مشاريع منجزة", "Projets réalisés")}</a></li>
+              <li><a href="/projects" className="hover:text-secondary transition-colors">{t("مشاريع منجزة", "Projets réalisés")}</a></li>
               <li><a href="#" className="hover:text-secondary transition-colors">{t("آخر الأخبار", "Dernières nouvelles")}</a></li>
               <li>
                 <a href="#contact" className="hover:text-secondary transition-colors font-semibold text-secondary">
