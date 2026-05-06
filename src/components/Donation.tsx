@@ -11,7 +11,7 @@ export const Donation = () => {
   const { toast } = useToast();
   const [copied, setCopied] = useState(false);
 
-  const rib = "350 810 0000000010508050 53";
+  const rib = "53 00000000010508050 810 350";
 
   const copyRib = () => {
     navigator.clipboard.writeText(rib.replace(/\s/g, ''));
@@ -52,9 +52,9 @@ export const Donation = () => {
 
               <div className="space-y-6">
                 <div>
-                  <p className="text-white/50 text-sm mb-2">{t("رقم الحساب البنكي (RIB)", "Numéro RIB")}</p>
+                  <p className="text-white/50 text-sm mb-2" dir="ltr">{t("رقم الحساب البنكي (RIB)", "Numéro RIB", "Bank Account (RIB)")}</p>
                   <div className="flex items-center justify-between bg-white/10 p-4 rounded-xl border border-white/5 group">
-                    <span className="text-lg md:text-xl font-mono tracking-wider">{rib}</span>
+                    <span className="text-lg md:text-xl font-mono tracking-wider"><span dir="ltr">{rib}</span></span>
                     <Button
                       variant="ghost"
                       size="icon"
@@ -87,7 +87,7 @@ export const Donation = () => {
                 {t("تواصل معنا مباشرة", "Contact Direct")}
               </h3>
 
-              <a href="tel:+212668043935" className="flex items-center gap-6 group">
+              <a href="tel:+212668043935" dir="ltr" className="flex items-center gap-6 group">
                 <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center group-hover:bg-secondary transition-colors">
                   <Phone className="w-6 h-6" />
                 </div>
