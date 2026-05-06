@@ -2,7 +2,8 @@
 
 import React from 'react';
 import { useLanguage } from './LanguageContext';
-import { Handshake, Facebook, Instagram, Twitter, Youtube, MapPin, ExternalLink } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Youtube, MapPin, ExternalLink, Phone, Mail } from 'lucide-react';
+import Image from 'next/image';
 
 export const Footer = () => {
   const { t } = useLanguage();
@@ -11,15 +12,17 @@ export const Footer = () => {
     <footer className="bg-background border-t pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+
           {/* Brand */}
           <div className="space-y-6">
-            <div className="flex items-center gap-2">
-              <div className="bg-secondary p-2 rounded-full">
-                <Handshake className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-bold text-primary">
-                {t("جمعية أكادير أوملال", "Assoc. Agadir Oumlil")}
-              </span>
+            <div className="flex items-center">
+              <Image
+                src="/images/logo-navbar.png"
+                alt="Association Agadir Oumlil"
+                width={180}
+                height={72}
+                className="h-16 w-auto object-contain"
+              />
             </div>
             <p className="text-muted-foreground leading-relaxed">
               {t(
@@ -27,31 +30,35 @@ export const Footer = () => {
                 "Une association de développement dédiée au soutien des plus démunis dans la province de Taroudant."
               )}
             </p>
-            <div className="flex items-center gap-4">
-              <a href="#" className="p-2 bg-muted rounded-full hover:bg-secondary hover:text-white transition-all">
-                <Facebook className="w-5 h-5" />
+            <div className="flex items-center gap-3">
+              <a href="#" aria-label="Facebook" className="p-2 bg-muted rounded-full hover:bg-secondary hover:text-white transition-all">
+                <Facebook className="w-4 h-4" />
               </a>
-              <a href="#" className="p-2 bg-muted rounded-full hover:bg-secondary hover:text-white transition-all">
-                <Instagram className="w-5 h-5" />
+              <a href="#" aria-label="Instagram" className="p-2 bg-muted rounded-full hover:bg-secondary hover:text-white transition-all">
+                <Instagram className="w-4 h-4" />
               </a>
-              <a href="#" className="p-2 bg-muted rounded-full hover:bg-secondary hover:text-white transition-all">
-                <Twitter className="w-5 h-5" />
+              <a href="#" aria-label="Twitter" className="p-2 bg-muted rounded-full hover:bg-secondary hover:text-white transition-all">
+                <Twitter className="w-4 h-4" />
               </a>
-              <a href="#" className="p-2 bg-muted rounded-full hover:bg-secondary hover:text-white transition-all">
-                <Youtube className="w-5 h-5" />
+              <a href="#" aria-label="Youtube" className="p-2 bg-muted rounded-full hover:bg-secondary hover:text-white transition-all">
+                <Youtube className="w-4 h-4" />
               </a>
             </div>
           </div>
 
-          {/* Links */}
+          {/* Liens Rapides */}
           <div>
             <h4 className="font-bold text-primary text-lg mb-6">{t("روابط سريعة", "Liens Rapides")}</h4>
             <ul className="space-y-4 text-muted-foreground">
-              <li><a href="#" className="hover:text-secondary transition-colors">{t("من نحن", "À propos")}</a></li>
-              <li><a href="#" className="hover:text-secondary transition-colors">{t("مجالات التدخل", "Domaines d'action")}</a></li>
-              <li><a href="#" className="hover:text-secondary transition-colors">{t("مشاريع منجزة", "Projets réalisés")}</a></li>
+              <li><a href="#mission" className="hover:text-secondary transition-colors">{t("من نحن", "À propos")}</a></li>
+              <li><a href="#programs" className="hover:text-secondary transition-colors">{t("مجالات التدخل", "Domaines d'action")}</a></li>
+              <li><a href="#projects" className="hover:text-secondary transition-colors">{t("مشاريع منجزة", "Projets réalisés")}</a></li>
               <li><a href="#" className="hover:text-secondary transition-colors">{t("آخر الأخبار", "Dernières nouvelles")}</a></li>
-              <li><a href="#" className="hover:text-secondary transition-colors">{t("تبرع الآن", "Faire un don")}</a></li>
+              <li>
+                <a href="#contact" className="hover:text-secondary transition-colors font-semibold text-secondary">
+                  {t("تبرع الآن ←", "Faire un don →")}
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -60,46 +67,51 @@ export const Footer = () => {
             <h4 className="font-bold text-primary text-lg mb-6">{t("معلومات التواصل", "Contact")}</h4>
             <ul className="space-y-4 text-muted-foreground">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-secondary shrink-0" />
+                <MapPin className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
                 <span>Douar Anrouz, Province de Taroudant, Maroc</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="font-bold text-secondary">M:</span>
-                <span>contact.agadiroumlil@gmail.com</span>
+                <Mail className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
+                <a href="mailto:contact.agadiroumlil@gmail.com" className="hover:text-secondary transition-colors break-all">
+                  contact.agadiroumlil@gmail.com
+                </a>
               </li>
               <li className="flex items-start gap-3">
-                <span className="font-bold text-secondary">T:</span>
-                <span>+212 668-043935</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="font-bold text-secondary">T:</span>
-                <span>+212 673-735258</span>
+                <Phone className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
+                <div className="flex flex-col gap-1">
+                  <a href="tel:+212668043935" className="hover:text-secondary transition-colors">+212 668-043935</a>
+                  <a href="tel:+212673735258" className="hover:text-secondary transition-colors">+212 673-735258</a>
+                </div>
               </li>
             </ul>
           </div>
 
-          {/* Map Link */}
+          {/* Carte Google Maps réelle */}
           <div>
             <h4 className="font-bold text-primary text-lg mb-6">{t("موقعنا الجغرافي", "Localisation")}</h4>
-            <div className="relative group rounded-2xl overflow-hidden border aspect-video">
-              <img
-                src="https://picsum.photos/seed/map/400/250"
-                alt="Map preview"
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+            <div className="relative rounded-2xl overflow-hidden border border-border shadow-md" style={{height: '180px'}}>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53669.0!2d-8.056!3d30.721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb8b548d6a59d8b%3A0x8d4f6e1e2a9b0c3a!2sTaouiyalt%2C%20Taroudant!5e0!3m2!1sfr!2sma!4v1715000000000!5m2!1sfr!2sma"
+                width="100%"
+                height="180"
+                style={{border: 0}}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localisation Douar Anrouz"
               />
               <a
                 href="https://maps.app.goo.gl/yvaqHo72LmcA9uog9"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="absolute inset-0 bg-primary/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                className="absolute bottom-3 right-3 bg-white text-primary font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 text-xs shadow-lg hover:bg-secondary hover:text-white transition-colors"
               >
-                <div className="bg-white text-primary font-bold px-4 py-2 rounded-full flex items-center gap-2">
-                  <ExternalLink className="w-4 h-4" />
-                  {t("افتح الخريطة", "Google Maps")}
-                </div>
+                <ExternalLink className="w-3 h-3" />
+                {t("افتح الخريطة", "Ouvrir")}
               </a>
             </div>
           </div>
+
         </div>
 
         <div className="pt-10 border-t flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-muted-foreground">

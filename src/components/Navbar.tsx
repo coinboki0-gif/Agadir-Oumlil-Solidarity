@@ -3,7 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from './LanguageContext';
 import { Button } from '@/components/ui/button';
-import { Handshake, Menu, X, Globe } from 'lucide-react';
+import { Menu, X, Globe } from 'lucide-react';
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 export const Navbar = () => {
@@ -32,16 +33,18 @@ export const Navbar = () => {
     )}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="bg-secondary p-2 rounded-full shadow-lg">
-            <Handshake className="w-6 h-6 text-white" />
-          </div>
-          <span className={cn(
-            "text-xl font-bold tracking-tight",
-            isScrolled ? "text-primary" : "text-white"
-          )}>
-            {t("جمعية أكادير أوملال", "Assoc. Agadir Oumlil")}
-          </span>
+        <div className="flex items-center">
+          <Image
+            src="/images/logo-navbar.png"
+            alt="Association Agadir Oumlil"
+            width={160}
+            height={64}
+            className={cn(
+              "h-14 w-auto object-contain transition-all duration-300",
+              isScrolled ? "brightness-100" : "brightness-0 invert"
+            )}
+            priority
+          />
         </div>
 
         {/* Desktop Links */}
@@ -67,12 +70,12 @@ export const Navbar = () => {
             size="sm"
             onClick={toggleLanguage}
             className={cn(
-              "flex items-center gap-2",
+              "flex items-center gap-2 font-semibold",
               isScrolled ? "text-primary" : "text-white hover:bg-white/10"
             )}
           >
             <Globe className="w-4 h-4" />
-            {language === 'ar' ? 'FR' : 'العربية'}
+            {language === 'fr' ? 'العربية' : language === 'ar' ? 'EN' : 'FR'}
           </Button>
           <Button className="bg-secondary hover:bg-secondary/90 text-white font-bold px-6 shadow-md">
             {t("تبرع الآن", "Faire un don")}
@@ -103,7 +106,7 @@ export const Navbar = () => {
           ))}
           <div className="flex flex-col gap-4 border-t pt-4">
             <Button variant="outline" onClick={toggleLanguage} className="w-full">
-              {language === 'ar' ? 'Changer en Français' : 'تغيير إلى العربية'}
+              {language === 'fr' ? 'تغيير إلى العربية' : language === 'ar' ? 'Switch to English' : 'Passer en Français'}
             </Button>
             <Button className="bg-secondary text-white w-full py-6 text-lg font-bold">
               {t("تبرع الآن", "Faire un don")}

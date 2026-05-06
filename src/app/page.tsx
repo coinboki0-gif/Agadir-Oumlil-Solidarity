@@ -12,7 +12,6 @@ import { Testimonial } from '@/components/Testimonial';
 import { Donation } from '@/components/Donation';
 import { Footer } from '@/components/Footer';
 import { Toaster } from '@/components/ui/toaster';
-import { ImpactStoryTool } from '@/components/ImpactStoryTool';
 
 export default function Home() {
   return (
@@ -25,7 +24,6 @@ export default function Home() {
         <FeaturedProject />
         <Ramadan />
         <Testimonial />
-        <ImpactStoryTool />
         <Donation />
         <Footer />
         <Toaster />
