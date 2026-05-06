@@ -4,13 +4,11 @@ import React from 'react';
 import { useLanguage } from './LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Counter } from './Counter';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+
 import { ChevronDown, ArrowRight } from 'lucide-react';
 
 export const Hero = () => {
   const { t, language } = useLanguage();
-  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-mountains');
-
   const stats = [
     { value: 635000, suffix: " DH", prefix: "", label: t("ميزانية 2025", "Budget 2025", "2025 Budget") },
     { value: 600, suffix: "", prefix: "+", label: t("مستفيد رمضان", "Bénéficiaires Ramadan", "Ramadan Beneficiaries") },
@@ -27,10 +25,14 @@ export const Hero = () => {
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden">
 
-      {/* Background Image */}
+      {/* Background Image - responsive */}
       <div
-        className="absolute inset-0 z-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage?.imageUrl})` }}
+        className="absolute inset-0 z-0 bg-cover bg-center md:hidden"
+        style={{ backgroundImage: `url('https://i.ibb.co/pvdBnxnW/A-vertical-close-up-portrait-of-202605060200-1-1.webp')` }}
+      />
+      <div
+        className="absolute inset-0 z-0 bg-cover bg-center hidden md:block"
+        style={{ backgroundImage: `url('https://i.ibb.co/84jKW28J/A-cinematic-wide-angle-aerial-photograph-202605060200-1-1.webp')` }}
       />
 
       {/* Cinematic overlay */}
