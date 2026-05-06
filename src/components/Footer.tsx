@@ -110,7 +110,7 @@ export const Footer = () => {
         </div>
 
         <div className="pt-10 border-t flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-muted-foreground">
-          <p>Copyright 2025 © Association Agadir Oumlil. All rights reserved.</p>
+          <p>Copyright 2026 © Association Agadir Oumlil. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link href="/contact" className="hover:text-primary transition-colors">{t('سياسة الخصوصية', 'Vie privée')}</Link>
             <Link href="/contact" className="hover:text-primary transition-colors">{t('شروط الاستخدام', 'Conditions')}</Link>
