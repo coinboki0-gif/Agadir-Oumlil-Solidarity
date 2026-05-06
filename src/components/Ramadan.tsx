@@ -2,12 +2,11 @@
 
 import React from 'react';
 import { useLanguage } from './LanguageContext';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+
 import { Moon, Package, Users, BadgeCheck } from 'lucide-react';
 
 export const Ramadan = () => {
   const { t } = useLanguage();
-  const ramadanImg = PlaceHolderImages.find(img => img.id === 'ramadan-food');
 
   return (
     <section className="py-24 bg-[#D4A017]/5 relative overflow-hidden">
@@ -59,7 +58,7 @@ export const Ramadan = () => {
               <div className="relative group">
                 <div className="absolute -inset-4 bg-white/20 rounded-[2rem] blur-xl group-hover:blur-2xl transition-all" />
                 <img
-                  src={ramadanImg?.imageUrl}
+                  src="https://i.ibb.co/GfCD842k/Aerial-view-of-a-Moroccan-202605060241.jpg"
                   alt="Ramadan Aid"
                   className="relative rounded-[2rem] shadow-2xl w-full h-[450px] object-cover border-4 border-white/10"
                   data-ai-hint="charity food"
