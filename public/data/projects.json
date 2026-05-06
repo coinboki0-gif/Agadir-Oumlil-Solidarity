@@ -110,19 +110,5 @@
     "category": "Education",
     "mainImage": "dfgdfgdf",
     "status": "active"
-  },
-  {
-    "id": "zzzzzzzzzz",
-    "titleAr": "zzzzzzzzzzzzzzzzzzzzzzzzzzz",
-    "titleFr": "zzzzzzzzzzzz",
-    "titleEn": "zzzzzzzzzzzz",
-    "descAr": "zzzzzzzzzzzzzzzzzzzz",
-    "descFr": "zzzzzzzzzzzzzzzzzzzzz",
-    "descEn": "zzzzzzzzzzzzzzzzzz",
-    "budget": "zzzzzzzzzzzzzzzzz",
-    "year": "2026",
-    "category": "Health",
-    "mainImage": "zzzzzzzzzzzzzzzzzzzzzzzzzzzz",
-    "status": "active"
   }
 ]
