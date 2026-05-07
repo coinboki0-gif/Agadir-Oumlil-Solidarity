@@ -172,10 +172,10 @@ const ProjectModal = ({ project, onClose }: { project: ReturnType<typeof enrichP
               <p className="text-xs text-muted-foreground mb-0.5">{t('الميزانية','Budget','Budget')} · {project.year}</p>
               <p className="text-xl font-bold text-secondary" dir="ltr">{project.budget}</p>
             </div>
-            <Button className="bg-secondary hover:bg-secondary/90 text-white font-bold px-6 py-5 rounded-xl gap-2">
+            <a href="/contact" onClick={onClose} className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white font-bold px-6 py-5 rounded-xl transition-colors">
               {t('تبرع الآن','Faire un don','Donate Now')}
               <ChevronRight className="w-4 h-4" />
-            </Button>
+            </a>
           </div>
         </div>
       </div>
