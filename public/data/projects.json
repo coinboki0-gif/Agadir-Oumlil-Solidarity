@@ -11,7 +11,8 @@
     "year": "2024",
     "status": "completed",
     "category": "Infrastructure",
-    "mainImage": "https://i.ibb.co/nMsrmrdW/Capture-d-cran-2026-05-06-022346-1.png"
+    "mainImage": "https://i.ibb.co/nMsrmrdW/Capture-d-cran-2026-05-06-022346-1.png",
+    "gallery": []
   },
   {
     "id": "medical",
@@ -25,7 +26,8 @@
     "year": "2025",
     "status": "active",
     "category": "Health",
-    "mainImage": "https://i.ibb.co/GfCD842k/Aerial-view-of-a-Moroccan-202605060241.jpg"
+    "mainImage": "https://i.ibb.co/GfCD842k/Aerial-view-of-a-Moroccan-202605060241.jpg",
+    "gallery": []
   },
   {
     "id": "education",
@@ -39,7 +41,8 @@
     "year": "2025",
     "status": "active",
     "category": "Education",
-    "mainImage": "https://i.ibb.co/84jKW28J/A-cinematic-wide-angle-aerial-photograph-202605060200-1-1.webp"
+    "mainImage": "https://i.ibb.co/84jKW28J/A-cinematic-wide-angle-aerial-photograph-202605060200-1-1.webp",
+    "gallery": []
   },
   {
     "id": "ramadan",
@@ -53,7 +56,8 @@
     "year": "2026",
     "status": "active",
     "category": "Solidarity",
-    "mainImage": "https://i.ibb.co/GfCD842k/Aerial-view-of-a-Moroccan-202605060241.jpg"
+    "mainImage": "https://i.ibb.co/GfCD842k/Aerial-view-of-a-Moroccan-202605060241.jpg",
+    "gallery": []
   },
   {
     "id": "housing",
@@ -67,7 +71,8 @@
     "year": "2025",
     "status": "completed",
     "category": "Housing",
-    "mainImage": "https://i.ibb.co/pvdBnxnW/A-vertical-close-up-portrait-of-202605060200-1-1.webp"
+    "mainImage": "https://i.ibb.co/pvdBnxnW/A-vertical-close-up-portrait-of-202605060200-1-1.webp",
+    "gallery": []
   },
   {
     "id": "mosque",
@@ -81,7 +86,8 @@
     "year": "2025",
     "status": "completed",
     "category": "Religious",
-    "mainImage": "https://i.ibb.co/84jKW28J/A-cinematic-wide-angle-aerial-photograph-202605060200-1-1.webp"
+    "mainImage": "https://i.ibb.co/84jKW28J/A-cinematic-wide-angle-aerial-photograph-202605060200-1-1.webp",
+    "gallery": []
   },
   {
     "id": "a",
@@ -95,7 +101,13 @@
     "year": "2026",
     "category": "Education",
     "mainImage": "https://res.cloudinary.com/dd9vrr71p/image/upload/v1778160974/agadir-oumlil/huvrey80a801dyeqergn.png",
-    "status": "active"
+    "status": "active",
+    "gallery": [
+      "https://res.cloudinary.com/dd9vrr71p/image/upload/v1778161431/agadir-oumlil/wisc4ihlu6njcibc0zse.png",
+      "https://res.cloudinary.com/dd9vrr71p/image/upload/v1778161431/agadir-oumlil/jueafyyokyzqaidqm6ky.png",
+      "https://res.cloudinary.com/dd9vrr71p/image/upload/v1778161431/agadir-oumlil/wt1bjvzv0iwpivzuonsc.png",
+      "https://res.cloudinary.com/dd9vrr71p/image/upload/v1778161431/agadir-oumlil/tgqtuca3jhf3yj7tapn3.png"
+    ]
   },
   {
     "id": "zzzzz",
@@ -109,6 +121,7 @@
     "year": "2026",
     "category": "Education",
     "mainImage": "https://res.cloudinary.com/dd9vrr71p/image/upload/v1778161044/agadir-oumlil/m0lpwiv4oxa48wzd6if7.png",
-    "status": "active"
+    "status": "active",
+    "gallery": []
   }
 ]
