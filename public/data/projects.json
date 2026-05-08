@@ -88,25 +88,5 @@
     "category": "Religious",
     "mainImage": "https://i.ibb.co/84jKW28J/A-cinematic-wide-angle-aerial-photograph-202605060200-1-1.webp",
     "gallery": []
-  },
-  {
-    "id": "a",
-    "titleAr": "aaaaaaaaaaaaaaaaaaaaaa",
-    "titleFr": "aaaaaaaaaaaaaaaa",
-    "titleEn": "aaaaaaaaaaaaaaa",
-    "descAr": "aaaaaaaaaaaaaaa",
-    "descFr": "aaaaaaaaaaaaaaaaaaaaaa",
-    "descEn": "aaaaaaaaaaaaaaa",
-    "budget": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-    "year": "2026",
-    "category": "Education",
-    "mainImage": "https://res.cloudinary.com/dd9vrr71p/image/upload/v1778160974/agadir-oumlil/huvrey80a801dyeqergn.png",
-    "status": "active",
-    "gallery": [
-      "https://res.cloudinary.com/dd9vrr71p/image/upload/v1778161484/agadir-oumlil/yjltqpswid76nf6hwtyc.png",
-      "https://res.cloudinary.com/dd9vrr71p/image/upload/v1778161484/agadir-oumlil/ys0adoipyybsd673yusa.png",
-      "https://res.cloudinary.com/dd9vrr71p/image/upload/v1778161484/agadir-oumlil/wk677zprlgdudotle9t0.png",
-      "https://res.cloudinary.com/dd9vrr71p/image/upload/v1778161484/agadir-oumlil/hfvsqn1qugvshdrnc6ef.png"
-    ]
   }
 ]
