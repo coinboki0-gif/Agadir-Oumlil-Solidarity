@@ -13,6 +13,7 @@ import { Footer } from '@/components/Footer';
 import { Toaster } from '@/components/ui/toaster';
 import { SplashScreen } from '@/components/SplashScreen';
 import { AnimatedSection } from '@/components/AnimatedSection';
+import { Documents } from '@/components/Documents';
 
 export default function Home() {
   return (
@@ -38,6 +39,9 @@ export default function Home() {
         </AnimatedSection>
         <AnimatedSection animation="fade-right" delay={0}>
           <Donation />
+        </AnimatedSection>
+        <AnimatedSection animation="fade-up" delay={0}>
+          <Documents />
         </AnimatedSection>
         <AnimatedSection animation="fade-up" delay={0}>
           <Footer />
