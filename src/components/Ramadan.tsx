@@ -58,7 +58,7 @@ export const Ramadan = () => {
               <div className="relative group">
                 <div className="absolute -inset-4 bg-white/20 rounded-[2rem] blur-xl group-hover:blur-2xl transition-all" />
                 <img
-                  src="https://i.ibb.co/GfCD842k/Aerial-view-of-a-Moroccan-202605060241.jpg"
+                  src="https://i.ibb.co/9H7s46fK/Whats-App-Image-2026-05-13-at-18-12-20.jpg"
                   alt="Ramadan Aid"
                   className="relative rounded-[2rem] shadow-2xl w-full h-[450px] object-cover border-4 border-white/10"
                   data-ai-hint="charity food"
