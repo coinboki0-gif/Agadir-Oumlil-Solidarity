@@ -50,7 +50,7 @@ function ContactContent() {
             </div>
             <div className="min-w-0">
               <p className="text-xs font-bold text-secondary uppercase tracking-wider mb-1.5">{t("الهاتف", "Téléphone")}</p>
-              <a href="tel:+212668043935" className="text-sm text-foreground/80 hover:text-primary transition-colors block">+212 668-043935</a>
+              <a href="tel:+212673028454" className="text-sm text-foreground/80 hover:text-primary transition-colors block">+212 673-028454</a>
               <a href="tel:+212673735258" className="text-sm text-foreground/80 hover:text-primary transition-colors block">+212 673-735258</a>
             </div>
           </div>
@@ -84,7 +84,7 @@ function ContactContent() {
 
         {/* أزرار التواصل — عمود واحد على الهاتف */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4 mb-8 md:mb-12">
-          <a href="https://wa.me/212668043935" target="_blank" rel="noopener noreferrer"
+          <a href="https://wa.me/212673028454" target="_blank" rel="noopener noreferrer"
             className="bg-green-500 hover:bg-green-600 text-white rounded-2xl p-5 flex items-center sm:flex-col gap-4 sm:gap-3 sm:text-center shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
             <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center shrink-0">
               <MessageCircle className="w-6 h-6" />
@@ -106,14 +106,14 @@ function ContactContent() {
             </div>
           </a>
 
-          <a href="tel:+212668043935"
+          <a href="tel:+212673028454"
             className="bg-secondary hover:bg-secondary/90 text-white rounded-2xl p-5 flex items-center sm:flex-col gap-4 sm:gap-3 sm:text-center shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
             <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center shrink-0">
               <Send className="w-6 h-6" />
             </div>
             <div>
               <p className="font-bold text-base md:text-lg">{t("اتصل بنا", "Appelez-nous")}</p>
-              <p className="text-xs md:text-sm text-white/80 mt-0.5">+212 668-043935</p>
+              <p className="text-xs md:text-sm text-white/80 mt-0.5">+212 673-028454</p>
             </div>
           </a>
         </div>
