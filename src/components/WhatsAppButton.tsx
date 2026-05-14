@@ -1,16 +1,14 @@
 "use client";
-
 export default function WhatsAppButton() {
   const phoneNumber = "212673028454";
-  const message = encodeURIComponent("مرحباً، أريد الاستفسار عن أنشطة الجمعية");
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
-
+  const message = encodeURIComponent("Hello, I would like to inquire about the association activities");
+  const whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + message;
   return (
     <a
       href={whatsappUrl}
-      target="_blank"
+      target={"_blank"}
       rel="noopener noreferrer"
-      aria-label="Contactez-nous sur WhatsApp"
+      aria-label="Contact us on WhatsApp"
       style={{
         position: "fixed",
         bottom: "28px",
@@ -26,6 +24,14 @@ export default function WhatsAppButton() {
         boxShadow: "0 4px 20px rgba(37, 211, 102, 0.45)",
         transition: "transform 0.2s ease, box-shadow 0.2s ease",
         textDecoration: "none",
+      }}
+      onMouseEnter={e => {
+        e.currentTarget.style.transform = "scale(1.12)";
+        e.currentTarget.style.boxShadow = "0 6px 28px rgba(37, 211, 102, 0.65)";
+      }}
+      onMouseLeave={e => {
+        e.currentTarget.style.transform = "scale(1)";
+        e.currentTarget.style.boxShadow = "0 4px 20px rgba(37, 211, 102, 0.45)";
       }}
     >
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="white">
