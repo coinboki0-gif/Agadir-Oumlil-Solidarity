@@ -87,13 +87,13 @@ export const Donation = () => {
                 {t("تواصل معنا مباشرة", "Contact Direct")}
               </h3>
 
-              <a href="tel:+212668043935" dir="ltr" className="flex items-center gap-6 group">
+              <a href="tel:+212673028454" dir="ltr" className="flex items-center gap-6 group">
                 <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center group-hover:bg-secondary transition-colors">
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
                   <p className="text-white/50 text-sm">{t("اتصال هاتفي", "Appelez-nous")}</p>
-                  <p className="text-xl font-bold tracking-wider">+212 668-043935</p>
+                  <p className="text-xl font-bold tracking-wider">+212 673-028454</p>
                 </div>
               </a>
 
